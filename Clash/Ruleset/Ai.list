@@ -1,5 +1,5 @@
-# 内容: Ai
-# 数量: 491
+# 内容: Ai（含 Google.list 与 GitHub 关键字；ProxyLite 已删对应重复项，勿两处并存）
+# 数量: 525
 
 DOMAIN,ai.azure.com
 DOMAIN,ai.google.dev
@@ -493,9 +493,34 @@ IP-ASN,14061,no-resolve
 IP-ASN,20473,no-resolve
 USER-AGENT,PayPal*
 
-# Github
+# Google（合并自 Ruleset/Google.list；YouTube 主域名见 ProxyMedia # YouTube）
+DOMAIN-SUFFIX,1e100.net
+DOMAIN-SUFFIX,2mdn.net
+DOMAIN-SUFFIX,app-measurement.net
+DOMAIN-SUFFIX,c.gle
+DOMAIN-SUFFIX,g.co
+DOMAIN-SUFFIX,ggpht.com
+DOMAIN-SUFFIX,goo.gl
+DOMAIN-SUFFIX,googleapis.cn
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,gstatic.cn
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,gvt0.com
+DOMAIN-SUFFIX,gvt1.com
+DOMAIN-SUFFIX,gvt2.com
+DOMAIN-SUFFIX,gvt3.com
+DOMAIN-SUFFIX,xn--ngstr-lra8j.com
+IP-CIDR,74.125.0.0/16,no-resolve
+IP-CIDR,173.194.0.0/16,no-resolve
+
+# Github（合并自 ProxyLite 关键字 + 原 suffix）
+DOMAIN-KEYWORD,github
 DOMAIN-SUFFIX,github.com
 DOMAIN-SUFFIX,github.io
 DOMAIN-SUFFIX,githubapp.com
 DOMAIN-SUFFIX,githubassets.com
 DOMAIN-SUFFIX,githubusercontent.com
+
+# 宽泛匹配置底，避免覆盖上文更具体规则
+DOMAIN-KEYWORD,gmail
+DOMAIN-KEYWORD,google
